@@ -1,14 +1,11 @@
 package constructor
 
-import sun.security.pkcs11.wrapper.CK_C_INITIALIZE_ARGS
-
 // primary constructor
-class Person(fn: String, ln:String){
-    val firstName=fn
-    val lastName=ln //
+class Person(val fn: String, val ln:String){
 }
 
 fun main(args: Array<String>) {
     val p: Person = Person("Anna", "Who")
-    p.firstName
+    // Output Anna
+    println(p.fn)
 }
